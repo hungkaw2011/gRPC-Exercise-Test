@@ -1,0 +1,2 @@
+gRPC_Services/People.cs \
+gRPC_Services/PeopleGrpc.cs: ../protos/people.proto

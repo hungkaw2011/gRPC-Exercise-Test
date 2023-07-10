@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message CreatePersonRequest {
+	string firstName = 1;
+	string lastName = 2;
+}
+
+message Person {
+	int32 id =1;
+	string firstName = 2;
+	string lastName = 3;
+}
+
+service PeopleService {
+	rpc CreatePerson(CreatePersonRequest) returns(Person);
+}
